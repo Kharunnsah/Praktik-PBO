@@ -16,6 +16,7 @@ public class KaryawanTetap extends Karyawan {
     public KaryawanTetap(int golongan, String nik, String nama) {
         super(nik, nama);
         this.golongan = golongan;
+        this.tunjangan = tunjangan;
     }
 
     
