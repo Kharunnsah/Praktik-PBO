@@ -50,7 +50,16 @@ public class PembayaranTunai extends Pembayaran implements CetakStruk{
         System.out.println("Id Transaksi = " +idTransaksi);
         System.out.println("Jumlah Bayar ="  +jumlahBayar);
         System.out.println("Uang Bayar   ="  +uang);
-
+        if(uang>=jumlahBayar){
+          double kembalian = uang-jumlahBayar;
+          System.out.println("Proses Pembayaran Berhasil!");
+          System.out.println("Uang Kembalian: Rp."+kembalian);
+      }
+      else{
+          double kekurangan =jumlahBayar-uang;
+          System.out.println("Proses Pembayaran Gagal!!");
+          System.out.println("Uang Anda kurang sebanyak:Rp."+kekurangan);
+      }
 
 
     }
